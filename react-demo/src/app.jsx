@@ -86,32 +86,145 @@ import React from 'react';
 
 
 //#region 在子级组件中clickChanges的事件 子传父
-import ComponentLife from './ComponentLife'
+// import ComponentLife from './ComponentLife'
+// class App extends React.Component {
+
+//     constructor(props){
+//         super(props)
+//         // 将state的title传递给ComponentLife组件
+//         this.state = {
+//             title:"文本"
+//         }
+//     }
+//     clickChange = (data) => {
+//         this.setState({
+//             title:data
+//         })
+//     }
+//     // 渲染函数
+//     render() {
+
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 {/* 父级组件向子级附件传递数据以及点击事件 */}
+//                 <ComponentLife title={this.state.title} clickChanges={this.clickChange}/>
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+//#region 将setState异步变为同步
+// import SetStateDemo from './setStateDemo'
+// class App extends React.Component {
+
+//     render() {
+
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 <SetStateDemo />
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+
+//#region 条件渲染 以及Key的作用
+// import IfDemo from './ifDemo'
+// import KeyDemo from './KeyDemo'
+// class App extends React.Component {
+
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 <IfDemo />
+//                 <KeyDemo />
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+
+//#region 表单受控组件 RefsAndDom
+// import FormDemo from './FormDemo'
+// import RefsAndDom from './RefsAndDom'
+// import RefsForm from './RefsForm'
+// class App extends React.Component {
+
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 <FormDemo />
+//                 <RefsAndDom />
+//                 <RefsForm />
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+//#region 组件数据的流转
+// import Parent from './components/parent'
+
+
+// class App extends React.Component {
+
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 <Parent />
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+//#region 
+// import Compose from './compose'
+// class App extends React.Component {
+
+    // render() {
+//         return (
+//             <div>
+//                 <h1>Hello React Component</h1>
+//                 <Compose>
+//                     <div>
+//                         我是组合效果(这是子元素)
+//                     </div>
+
+//                 </Compose>
+//             </div>
+//         )
+//     }
+// }
+// export default App;
+//#endregion
+
+import PropsTypeDemo from './PropsTypeDemo'
+
+
 class App extends React.Component {
 
-    constructor(props){
-        super(props)
-        // 将state的title传递给ComponentLife组件
-        this.state = {
-            title:"文本"
-        }
-    }
-    clickChange = (data) => {
-        this.setState({
-            title:data
-        })
-    }
-    // 渲染函数
     render() {
-
         return (
             <div>
                 <h1>Hello React Component</h1>
-                {/* 父级组件向子级附件传递数据以及点击事件 */}
-                <ComponentLife title={this.state.title} clickChanges={this.clickChange}/>
+                <PropsTypeDemo >
+                </PropsTypeDemo>
             </div>
         )
     }
 }
 export default App;
-//#endregion
