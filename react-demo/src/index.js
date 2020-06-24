@@ -42,6 +42,9 @@ import ReactDOM from 'react-dom';
 
 //#endregion
 
+//#region class组件的使用
 import App from './app.jsx';
 ReactDOM.render(<App />, document.getElementById('root'));
+//#endregion
+
 
